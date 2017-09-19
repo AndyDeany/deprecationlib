@@ -5,8 +5,9 @@ import warnings
 warnings.simplefilter("always", DeprecationWarning)
 
 def deprecated(alternative_or_function):
-    def warn(func, alt):
-        message = f"{func.__name__}() is deprecated. Please use {alt} instead."
+    def warn(function, alternative):
+        details = (function, alternative)
+        message = "{}() is deprecated. Please use {} instead.".format(*details)
         warnings.warn(message, DeprecationWarning)
 
     if callable(alternative_or_function):
