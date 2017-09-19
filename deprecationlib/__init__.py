@@ -12,23 +12,24 @@ import warnings
 
 warnings.simplefilter("always", DeprecationWarning)
 
-def deprecated(alternative_or_function):
+def deprecated(alternative):
+    """Decorator for marking a function or method as deprecated."""
     def warn(function, alternative):
         details = (function.__name__, alternative)
         message = "{}() is deprecated. Please use {} instead.".format(*details)
         warnings.warn(message, DeprecationWarning)
 
-    if callable(alternative_or_function):
-        @wraps(alternative_or_function)
+    if callable(alternative):
+        @wraps(alternative)
         def deprecated_function(*args, **kwargs):
-            warn(alternative_or_function, "an alternative")
-            return alternative_or_function(*args, **kwargs)
+            warn(alternative, "an alternative")
+            return alternative(*args, **kwargs)
         return deprecated_function
 
     def decorator(function):
         @wraps(function)
         def deprecated_function(*args, **kwargs):
-            warn(function, alternative_or_function)
+            warn(function, alternative)
             return function(*args, **kwargs)
         return deprecated_function
     return decorator
