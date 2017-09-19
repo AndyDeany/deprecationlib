@@ -33,13 +33,3 @@ def deprecated(alternative="an alternative"):
             return function(*args, **kwargs)
         return deprecated_function
     return decorator
-
-
-@deprecated("hi")
-def yes(a, b):
-    print(a, b)
-
-@deprecated
-def no(a, b):
-    print(a, b)
-
