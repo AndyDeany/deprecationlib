@@ -1,3 +1,11 @@
+"""Python library for assisting with the deprecation process."""
+__version__ = "0.1.0"
+
+__url__ = "https://github.com/AndyDeany/deprecationlib"
+__author__ = "Andrew Dean"
+__author_email__ = "oneandydean@hotmail.com"
+
+
 from functools import wraps
 import warnings
 
