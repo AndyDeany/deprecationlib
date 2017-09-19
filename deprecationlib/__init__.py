@@ -12,7 +12,7 @@ import warnings
 
 warnings.simplefilter("always", DeprecationWarning)
 
-def deprecated(alternative):
+def deprecated(alternative="an alternative"):
     """Decorator for marking a function or method as deprecated."""
     def warn(function, alternative):
         details = (function.__name__, alternative)
