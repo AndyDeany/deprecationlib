@@ -14,7 +14,7 @@ warnings.simplefilter("always", DeprecationWarning)
 
 def deprecated(alternative_or_function):
     def warn(function, alternative):
-        details = (function, alternative)
+        details = (function.__name__, alternative)
         message = "{}() is deprecated. Please use {} instead.".format(*details)
         warnings.warn(message, DeprecationWarning)
 
