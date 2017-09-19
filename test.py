@@ -1,8 +1,7 @@
 from functools import wraps
 
 
-def test(alternative):
-    print("alternative:", alternative)
+def deprecated(alternative):
     if callable(alternative):
         @wraps(alternative)
         def deprecated_function(*args, **kwargs):
@@ -18,11 +17,11 @@ def test(alternative):
     return decorator
 
 
-@test("hi")
+@deprecated("hi")
 def yes(a, b):
-    print(a,b)
+    print(a, b)
 
-@test
+@deprecated
 def no(a, b):
     print(a, b)
 
