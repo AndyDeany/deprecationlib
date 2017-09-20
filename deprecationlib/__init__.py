@@ -2,6 +2,7 @@
 __version__ = "0.1.0"
 
 __url__ = "https://github.com/AndyDeany/deprecationlib"
+__download_url__ = "{}/archive/{}.tar.gz".format(__url__, __version__)
 __author__ = "Andrew Dean"
 __author_email__ = "oneandydean@hotmail.com"
 
