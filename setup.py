@@ -11,6 +11,7 @@ setup(
     author=deprecationlib.__author__,
     author_email=deprecationlib.__author_email__,
     packages=[deprecationlib.__name__],
+    keywords=("deprecation", "deprecated"),
     classifiers=(
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
