@@ -6,6 +6,7 @@ import deprecationlib
 setup(
     name=deprecationlib.__name__,
     version=deprecationlib.__version__,
+    license="MIT",
     description=deprecationlib.__doc__,
     url=deprecationlib.__url__,
     author=deprecationlib.__author__,
