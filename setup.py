@@ -9,6 +9,7 @@ setup(
     license="MIT",
     description=deprecationlib.__doc__,
     url=deprecationlib.__url__,
+    download_url=deprecationlib.__download_url__,
     author=deprecationlib.__author__,
     author_email=deprecationlib.__author_email__,
     packages=[deprecationlib.__name__],
