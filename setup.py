@@ -10,7 +10,7 @@ setup(
     url=deprecationlib.__url__,
     author=deprecationlib.__author__,
     author_email=deprecationlib.__author_email__,
-    packages=["deprecationlib"],
+    packages=[deprecationlib.__name__],
     classifiers=(
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
