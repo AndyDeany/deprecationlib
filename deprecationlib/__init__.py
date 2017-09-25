@@ -1,5 +1,5 @@
 """Python library for assisting with the deprecation process."""
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __url__ = "https://github.com/AndyDeany/deprecationlib"
 __download_url__ = "{}/archive/{}.tar.gz".format(__url__, __version__)
