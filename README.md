@@ -1,3 +1,3 @@
 # deprecationlib
 
-Created and maintained by Andrew Dean
+Created and maintained by Andrew Dean.
