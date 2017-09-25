@@ -15,7 +15,7 @@ setup(
     packages=(deprecationlib.__name__,),
     keywords=("deprecation", "deprecated"),
     classifiers=(
-        "Development Status :: 2 - Pre-Alpha",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Natural Language :: English",
         "Programming Language :: Python",
